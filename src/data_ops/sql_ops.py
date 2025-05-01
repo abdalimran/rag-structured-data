@@ -1,15 +1,9 @@
 import json
 from typing import Optional
-
-try:
-    from sqlalchemy import Engine
-    from sqlalchemy.inspection import inspect
-    from sqlalchemy.orm import Session
-    from sqlalchemy.sql.expression import text
-except ImportError:
-    raise ImportError(
-        "'sqlalchemy' not installed. Please install it with `pip install sqlalchemy`."
-    )
+from sqlalchemy import Engine
+from sqlalchemy.inspection import inspect
+from sqlalchemy.orm import Session
+from sqlalchemy.sql.expression import text
 
 
 def list_tables(db_engine: Engine) -> str:
