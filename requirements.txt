@@ -1,0 +1,4 @@
+# Python 3.10.14
+SQLAlchemy==2.0.40
+pydantic_ai==0.1.8
+ollama==0.4.7
